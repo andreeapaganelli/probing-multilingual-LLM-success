@@ -259,7 +259,8 @@ def extract_activations(
         )
         hidden_states = out.hidden_states  # tuple: (embedding, layer_1, ..., layer_N)
 
-        # Resolve the target token per example, accounting for left-padding
+        # Resolve the target token per example, accounting for right-padding
+        # (real tokens occupy [0, length); last real token is at index length-1)
         lengths = attention_mask.sum(dim=1)  # (B,)
         B = input_ids.shape[0]
         T = input_ids.shape[1]
@@ -515,6 +516,7 @@ def main() -> None:
     model_name = cfg["model_name"]
     log.info("Loading tokenizer for %s …", model_name)
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True, trust_remote_code=True)
+    tokenizer.padding_side = "right"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
