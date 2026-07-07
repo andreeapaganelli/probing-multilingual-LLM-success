@@ -1,0 +1,9 @@
+Model,Transfer-optimal layer,Same-language AUROC at that layer,Transfer AUROC at that layer,Gap,Gap %
+Qwen3-0.6B,19,0.823,0.785,0.039,4.7
+Qwen3-1.7B,17,0.803,0.776,0.026,3.2
+Qwen3-4B,23,0.772,0.752,0.02,2.6
+Qwen3-8B,23,0.775,0.752,0.023,3.0
+Qwen3.5-4B,20,0.789,0.757,0.032,4.1
+Qwen3.5-9B,19,0.761,0.72,0.041,5.4
+gpt-oss-20b_low,17,0.744,0.69,0.055,7.4
+gpt-oss-20b_high,17,0.733,0.673,0.06,8.2

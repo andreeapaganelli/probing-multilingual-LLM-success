@@ -1,0 +1,27 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints
+.pytest_cache/
+.cache/
+
+# Environments / secrets
+.env
+.venv
+venv/
+
+# Editors
+.idea/
+.vscode/
+.DS_Store
+
+# Data and pipeline outputs are not tracked (see README for how to obtain/produce them)
+data/*
+!data/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Heavy artifacts
+*.joblib
+*.npy
+*.log

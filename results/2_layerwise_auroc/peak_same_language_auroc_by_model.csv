@@ -1,0 +1,9 @@
+model,mean_same_language_auroc,layer,max_layer,depth_pct,n_languages,n_test_per_language
+Qwen3-0.6B,0.823,19,28,67.9,10,440
+Qwen3-1.7B,0.808,20,28,71.4,10,440
+Qwen3-4B,0.774,25,36,69.4,10,440
+Qwen3-8B,0.776,21,36,58.3,10,440
+Qwen3.5-4B,0.795,18,32,56.2,10,440
+Qwen3.5-9B,0.763,20,32,62.5,10,440
+gpt-oss-20b_low,0.744,17,24,70.8,10,440
+gpt-oss-20b_high,0.738,18,24,75.0,10,440
