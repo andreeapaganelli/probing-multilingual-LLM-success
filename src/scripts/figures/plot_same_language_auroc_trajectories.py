@@ -97,11 +97,6 @@ def plot_all_models(
             mean,
             color=color,
             linewidth=3.2,
-            marker="o",
-            markersize=4.8,
-            markevery=4,
-            markerfacecolor="white",
-            markeredgewidth=1.4,
             zorder=3,
         )
 
@@ -126,10 +121,6 @@ def plot_all_models(
             [0],
             color="#2f2f2f",
             lw=3.2,
-            marker="o",
-            markersize=5,
-            markerfacecolor="white",
-            markeredgewidth=1.4,
             label="Mean AUROC",
         ),
         Patch(facecolor="#6a7fa5", alpha=0.22, edgecolor="none", label="+/- 1 std. dev."),
